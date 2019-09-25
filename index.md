@@ -3,7 +3,7 @@ layout:default
 title: My blog
 ---
 
-<h2>{{page.title}</h2>
+<h2>{{page.title}}</h2>
 
 <ul>
 {% for post in site.posts%}
