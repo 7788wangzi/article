@@ -1,7 +1,7 @@
 ---
 layout:default
 
-title: hello
+title:hello
 ---
 
 <h2>{{page.title}}</h2>
