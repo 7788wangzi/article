@@ -10,3 +10,12 @@ title: "My blog"
 <li>{{post.date | date_to_string}} <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
 {% endfor%}
 </ul>
+
+<ul>
+{% for member in site.data.members.members%}
+<li>
+<a href="https://github.com/{{ member.github }}">
+{{ member.name}}
+</a>
+</li>
+{% endfor%}
