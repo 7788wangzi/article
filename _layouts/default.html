@@ -12,13 +12,16 @@
 
 
 <div class="container">
+
+<div id="content-wrap">
 {{ content }}
 </div>
 
-
-
-<footer>
-	<ul class="list-unstyled">
+<footer id="footer">
+<div>
+<span>Happy wife, happy life!</span>
+</div>
+	<ul>
 	{% for member in site.data.members.members%}
 	<li>
 	<a href="https://github.com/{{ member.github }}">
@@ -28,6 +31,11 @@
 	{% endfor%}
 	</ul>
 </footer>
+</div>
+
+
+
+
 
 </body>
 </html>
