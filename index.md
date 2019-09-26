@@ -11,11 +11,3 @@ title: "My blog"
 {% endfor%}
 </ul>
 
-<ul>
-{% for member in site.data.members.members%}
-<li>
-<a href="https://github.com/{{ member.github }}">
-{{ member.name}}
-</a>
-</li>
-{% endfor%}
