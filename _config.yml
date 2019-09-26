@@ -1,3 +1,4 @@
+theme: jekyll-theme-midnight
 title: "mysite"
-remote_theme: MicrosoftLearning/Jekyll-Theme
+description: "A personal web site with github pages"
 baseurl: /article
