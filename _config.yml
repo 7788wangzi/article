@@ -1,4 +1,4 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-architect
 title: "mysite"
 description: "A personal web site with github pages"
 baseurl: /article
