@@ -6,8 +6,10 @@ title: "My blog"
 <h2>{{ page.title }}</h2>
 
 <ul>
-{% for post in site.posts%}
+
+{% for post in site.posts %}
 <li>{{post.date | date_to_string}} <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
-{% endfor%}
+{% endfor %}
+
 </ul>
 
