@@ -4,100 +4,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>{{ page.title }}</title>
-<!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mystyle.css">-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="{{ site.baseurl }}/assets/css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mystyle.css">
 </head>
 
 <body>
 
-<!--Navbar-->
-<nav class="navbar navbar-dark indigo">
 
-  <!-- Navbar brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
-	<span class="navbar-text white-text">
-    Navbar text with an inline element
-  </span>
-  <!-- Collapsible content -->
 
-</nav>
-<!--/.Navbar-->
-
-<div class="container-fluid>
+<div class="container">
 {{ content }}
 </div>
 
 
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
 
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Blog</h5>
-        <p>Happy wife, happy life! </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-{% for member in site.data.members.members%}
-<li>
-<a href="https://github.com/{{ member.github }}">
-{{ member.name}}
-</a>
-</li>
-{% endfor%}
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> qijiexue@outlook.com</a>
-  </div>
-  <!-- Copyright -->
-
+<footer>
+	<ul class="list-unstyled">
+	{% for member in site.data.members.members%}
+	<li>
+	<a href="https://github.com/{{ member.github }}">
+	{{ member.name}}
+	</a>
+	</li>
+	{% endfor%}
+	</ul>
 </footer>
-<!-- Footer -->
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/mdb.min.js"></script>
 </body>
 </html>
