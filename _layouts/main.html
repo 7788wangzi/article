@@ -2,17 +2,26 @@
 <html>
 	<head>
 		<title>{{ page.title }}</title>
+		<meta property="title" content="{{ page.title }}" />
+		<meta property="description" content="{{ page.description }}" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">		
 	</head>
 	<body>
 		<nav>
-			<ul>
+			<div class="container">
+			<div class="logo">My blog</div>
+			<ul class="nav-links">
 				<li><a href="/article">Home</a></li>				
 				<li><a href="/article/category">Categories</a></li>
 				<li><a href="https://qijiexue.herokuapp.com">CV</a></li>
 			</ul>
+			</div>
 		</nav>
+		
+		
 		<div class="container">
 		
 		{{ content }}

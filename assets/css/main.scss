@@ -2,22 +2,94 @@
 ---
 @import "{{ site.theme }}";
 
+
+
 body {
-    margin: 60px auto;
-    width: 70%;
+	margin: 0;
+	padding: 0;
+	font-weight:300;
+
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	#background: #55d6aa;
+	min-height: 8vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform:uppercase;
+}
+
+.logo{
+	color:red;
+	display: inline;
+	letter-spacing: 5px;
+	font-weight:bold;
+	font-size: 18px;
+}
+
+.nav-links {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style: none;
+	display:flex;
+}
+
+nav::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.nav-links li {
+	margin-right:20px;
+	position: relative;
+}
+
+.nav-links > li > a {	
+	text-decoration:none;
+	font-size: 14px;
+	color: #444;
+	letter-spacing: 2px;
+	
+}
+
+.nav-links li a::after{
+	content:"";
+	width:0%;
+	display: block;
+	height:3px;
+	background-color: #444;	
+	transition: all ease-in-out 250ms;
+	position: absolute;
+}
+
+.nav-links li a:hover{
+	color: #000;
+
+}
+
+.nav-links li a:hover::after{
+	width: 100%;	
 }
 
 div {
 	clear:inline-start;
 }
 
-nav ul, footer ul {
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+footer ul li {
 	float: left;
     display: inline;
     margin-right: 20px;
