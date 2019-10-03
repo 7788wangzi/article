@@ -26,11 +26,10 @@ nav {
 }
 
 .logo{
-	color:red;
 	display: inline;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	font-weight:bold;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 .nav-links {
@@ -50,11 +49,12 @@ nav::after{
 .nav-links li {
 	margin-right:20px;
 	position: relative;
+	display: inline-block;
 }
 
 .nav-links > li > a {	
 	text-decoration:none;
-	font-size: 14px;
+	font-size: 18px;
 	color: #444;
 	letter-spacing: 2px;
 	
