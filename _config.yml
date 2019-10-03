@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-tactile
 title: "mysite"
 description: "A personal web site with github pages"
 baseurl: /article

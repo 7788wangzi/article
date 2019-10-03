@@ -7,14 +7,12 @@ type: page
 
 
 <div class="page clearfix">
-<h2>{{page.title}}</h2>
-<hr>
     <div class="right">
         <div class="wrap">
 
             <!-- Content -->
             <div class="side content">
-                
+                <h1>Categories</h1>
                 <ul id="content-side" class="content-ul">
                     {% for category in site.categories%}
                         <li>
@@ -31,17 +29,18 @@ type: page
     </div>
 	
     <div class="left">
-        <ul>
+        <ul class="post-list">
             {% for category in site.categories %}
-            <h2 id="{{category | first}}">{{category | first}}</h2>
+            <h1 id="{{category | first}}">{{category | first}}</h1>
                 {% for posts in category  %}
                     {% for post in posts %}
                         {% if post.url %}
                         <li>
-                            <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                            </time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+						<div class="date">
+						<h3>{{ post.date | date:"%Y"}}<br><span>{{ post.date | date:"%m"}}</span></h3>
+						<div>
+						<a class="title" href="{{ post.url | prepend: site.baseurl }}"><p>{{ post.title }}</p></a>
+						</div>
 
                         </li>
                         {% endif %}
