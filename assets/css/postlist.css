@@ -2,11 +2,11 @@
 .post-list{
 margin:0;
 padding: 20px;
-position: absolute;
+position: relative;
 #top: 50%;
 #left: 50%;
 #transform: translate(-50%, -50%);
-width: 400px;
+width: 100%;
 background: #fff;
 border-radius: 10px;
 box-shadow: 0 15px 50px rgba(0,0,0,.2);
@@ -67,12 +67,12 @@ min-height: 80px;
 	margin-top:-6px;
 	font-size:16px;
 	color:#fff;
-	line-height:32px;
+	line-height:36px;
 
 }
 
 .post-list li .date h3 span{
-	font-size: 24px;
+	font-size: 26px;
 	color: #324d5b;
 }
 
