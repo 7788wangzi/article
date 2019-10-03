@@ -40,8 +40,6 @@ type: page
 						<h3>{{ post.date | date:"%Y"}}<br><span>{{ post.date | date:"%m"}}</span></h3>
 						<div>
 						<a class="title" href="{{ post.url | prepend: site.baseurl }}"><p>{{ post.title }}</p></a>
-						</div>
-
                         </li>
                         {% endif %}
                     {% endfor %}
