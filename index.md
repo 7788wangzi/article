@@ -6,10 +6,15 @@ title: "My blog"
 <h2>{{ page.title }}</h2>
 
 
-<ul>
-
+<ul class="post-list">
+<h1>Latest Post</h1>
 {% for post in site.posts %}
-<li>{{post.date | date_to_string}} <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+<li>
+<div class="date">
+<h3>{{ post.date | date:"%Y"}}<br><span>{{ post.date | date:"%M"}}</span></h3>
+</div>
+<a href="{{site.baseurl}}{{post.url}}"><p>{{ post.title }}</p></a>
+</li>
 {% endfor %}
 
 </ul>
