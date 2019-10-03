@@ -35,12 +35,12 @@ type: page
                 {% for posts in category  %}
                     {% for post in posts %}
                         {% if post.url %}
-                        <li>
+						<li>
 						<div class="date">
 						<h3>{{ post.date | date:"%Y"}}<br><span>{{ post.date | date:"%m"}}</span></h3>
-						<div>
-						<a class="title" href="{{ post.url | prepend: site.baseurl }}"><p>{{ post.title }}</p></a>
-                        </li>
+						</div>
+						<a href="{{site.baseurl}}{{post.url}}"><p>{{ post.title }}</p></a>
+						</li>
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
