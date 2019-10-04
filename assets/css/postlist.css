@@ -30,7 +30,7 @@ min-height: 80px;
 }
 
 .post-list li:hover{
-	background: #607d8b;
+	background: #e7e7e7;
 }
 
 .post-list li a{
@@ -78,4 +78,5 @@ min-height: 80px;
 
 .post-list li p{
 	font-size: 18px;
+	margin: 8px 0 0;
 }
