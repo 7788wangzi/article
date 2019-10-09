@@ -1,6 +1,7 @@
 ---
 layout: main
 title: 安装Jekyll
+categories: [运维]
 ---
 
 ## {{ page. title }}

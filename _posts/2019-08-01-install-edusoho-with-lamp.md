@@ -1,7 +1,7 @@
 ---
 layout: main
 title: 基于LAMP安装EduSoho在线学习管理系统(CMS，LMS)
-categories: [在线学习平台, CMS]
+categories: [在线学习平台]
 tags: [EduSoho, CMS, LMS]
 ---
 
