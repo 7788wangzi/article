@@ -1,7 +1,8 @@
 ---
-layout: main
 title: 使用Azure Pipeline自动构建.net core console应用
+description: CI, CD, 使用Azure Pipeline自动构建.net core console应用
 categories: [运维]
+layout: main
 ---
 
 ## {{ page. title }}
