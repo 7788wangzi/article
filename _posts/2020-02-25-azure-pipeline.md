@@ -1,7 +1,7 @@
 ---
 layout: main
 title: 使用Azure Pipeline自动构建.net core console应用
-categories: [运维, Azure DevOps]
+categories: [运维]
 ---
 
 ## {{ page. title }}
