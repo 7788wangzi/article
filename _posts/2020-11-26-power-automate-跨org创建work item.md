@@ -16,11 +16,11 @@ layout: main
     - 当更新一个现有work item时，使用`PATCH`方法。
     - API是 `https://dev.azure.com/{org}/{project}/_apis/wit/workitems/{id}?api-version=6.0`
 
-![先创建，再更新链接](../../assets/media/create-and-update.png)
+![先创建，再更新链接]({{ site.baseurl }}/assets/media/create-and-update.png)
 
 ### 另一种思路是：
 1. 直接使用`Send an HTTP request to Azure DevOps`创建一个新work item，并且建立链接关系。
     - 当创建一个新work item时，使用`POST`方法。
     - 创建work item的API是 `https://dev.azure.com/{org}/{project}/_apis/wit/workitems/${wit}?api-version=6.0&validateOnly=false&bypassRules=true`, 注意，work item type类型前使用$开始，否则报错page not found。
 
-![创建新work item并添加链接](../../assets/media/create-update.png)
+![创建新work item并添加链接]({{ site.baseurl }}/assets/media/create-update.png)
