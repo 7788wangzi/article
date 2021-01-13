@@ -12,7 +12,7 @@ layout: main
 
 一般，交付及时性SLA指标根据两个日期字段计算得出，**目标完成时间**和**实际完成时间**的差额。一个任务是在目标完成时间之前完成的，即为按时完成。实际完成时间在目标完成时间之前完成的任务的比例越多，交付及时性SLA指标就越高。
 
-根据这个计算方法，在Power BI中我们可以自动计算交付及时性SLA指标。我们的样例数据([Test-data.xlsx]({{ site.baseurl }}/assets/media/Test-data.xlsx))件有以下数据，其中使用到的两个时间字段：目标完成时间和实际完成时间。
+根据这个计算方法，在Power BI中我们可以自动计算交付及时性SLA指标。我们的样例数据([Test-data.xlsx]({{ site.baseurl }}/assets/media/Test-data.xlsx))如下，其中使用到的两个时间字段：目标完成时间和实际完成时间。
 
 ![样例数据]({{ site.baseurl }}/assets/media/2021-01-13-1-data-source.PNG)
 
