@@ -32,3 +32,5 @@ layout: main
 使用`Parse Json`需要2个输入，一个是要解析的文档内容，即`Send an HTTP request to Azure DevOps`的ouput - Body; 另一个是解析时参考的Schema, 这个Schema可以通过使用Postman来手动调用同一个Work item 来获得一个Response， 从Response作为一个Sample产生Schema。
 
 另外， 针对Work Item的操作，我们经常需要从一个Work Item访问到它的Parent Work Item, Get Work Item中有个Parent字段即是Parent work item 的Id.
+
+![Parse json of HTTP Send Request]({{ site.baseurl }}/assets/media/pa-parse-json.png)
