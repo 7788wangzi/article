@@ -24,3 +24,11 @@ layout: main
     - 创建work item的API是 `https://dev.azure.com/{org}/{project}/_apis/wit/workitems/${wit}?api-version=6.0&validateOnly=false&bypassRules=true`, 注意，work item type类型前使用$开始，否则报错page not found。
 
 ![创建新work item并添加链接]({{ site.baseurl }}/assets/media/create-update.png)
+
+### 更多关于`Send an HTTP request to Azure DevOps`的使用记录
+
+如果是使用`Get`方法来获取一个Work Item的字段，包括关系链接等， 需要对返回的Response进行Json 解析，用到`Parse Json`。
+
+使用`Parse Json`需要2个输入，一个是要解析的文档内容，即`Send an HTTP request to Azure DevOps`的ouput - Body; 另一个是解析时参考的Schema, 这个Schema可以通过使用Postman来手动调用同一个Work item 来获得一个Response， 从Response作为一个Sample产生Schema。
+
+另外， 针对Work Item的操作，我们经常需要从一个Work Item访问到它的Parent Work Item, Get Work Item中有个Parent字段即是Parent work item 的Id.
