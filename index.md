@@ -1,7 +1,7 @@
 ---
 layout: main
-title: "Qijie blog"
-description: Qijie blog
+title: "一五一十博客"
+description: 一五一十博客
 ---
 
 <ul class="post-list">
