@@ -34,3 +34,13 @@ layout: main
 另外， 针对Work Item的操作，我们经常需要从一个Work Item访问到它的Parent Work Item, Get Work Item中有个Parent字段即是Parent work item 的Id.
 
 ![Parse json of HTTP Send Request]({{ site.baseurl }}/assets/media/pa-parse-json.png)
+
+
+### 更多关于Azure DevOps API的用法
+
+**获取Work Item by Id**
+```
+https://dev.azure.com/{organization}/_apis/wit/workitems/{id}?$expand=relations&api-version=5.0
+```
+
+
