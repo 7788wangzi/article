@@ -47,6 +47,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 ![install ubuntu-1804.appx](media/install-ubuntu-1804.PNG)
 
 安装完成以后，运行Linux系统，初次运行需要花费时间完成初始化操作。
+
 ![init WSL](https://raw.githubusercontent.com/7788wangzi/azure/master/media/init-wsl.PNG)
 
 参照[在Linux中安装Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)完成Azure CLI的安装.
