@@ -44,7 +44,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 最后， 在命令行工具中，执行ubuntu-1804.appx的安装。
 
-![install ubuntu-1804.appx](media/install-ubuntu-1804.PNG)
+![install ubuntu-1804.appx]({{ site.baseurl }}/assets/media/install-ubuntu-1804.PNG)
 
 安装完成以后，运行Linux系统，初次运行需要花费时间完成初始化操作。
 
