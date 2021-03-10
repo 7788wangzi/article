@@ -31,7 +31,7 @@ layout: main
 
 使用`Parse Json`需要2个输入，一个是要解析的文档内容，即`Send an HTTP request to Azure DevOps`的ouput - Body; 另一个是解析时参考的Schema, 这个Schema可以通过使用Postman来手动调用同一个Work item 来获得一个Response， 从Response作为一个Sample产生Schema。
 
-另外， 针对Work Item的操作，我们经常需要从一个Work Item访问到它的Parent Work Item, Get Work Item中有个Parent字段即是Parent work item 的Id.
+另外， 针对Work Item的操作，我们经常需要从一个Work Item访问到它的Parent Work Item, Get Work Item中有个`Parent`字段即是Parent work item 的Id.
 
 ![Parse json of HTTP Send Request]({{ site.baseurl }}/assets/media/pa-parse-json.png)
 
@@ -42,5 +42,8 @@ layout: main
 ```
 https://dev.azure.com/{organization}/_apis/wit/workitems/{id}?$expand=relations&api-version=5.0
 ```
+在expand=relations的前提下，对获取的Work Item遍历relations, 对每一个relation关系，得到对应2个属性`rel`和`url`。
+
+![Extract relations of work item]({{ site.baseurl }}/assets/media/pa-wi-relations.png)
 
 
