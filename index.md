@@ -1,7 +1,7 @@
 ---
 layout: main
-title: "一五一十博客"
-description: 一五一十博客
+title: "二五一十博客"
+description: 二五一十博客
 ---
 
 <ul class="post-list">
