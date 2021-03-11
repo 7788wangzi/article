@@ -1,7 +1,7 @@
 ---
 layout: main
 title: Java面向对象编程基础
-categories: [Java, OOP]
+categories: [编程语言]
 tags: [Java, Object]
 ---
 ### Hello Java

@@ -1,7 +1,7 @@
 ---
 layout: main
 title: Azure Databricks数据分析入门
-categories: [Azure, 数据分析]
+categories: [数据分析]
 tags: [Azure, Databricks, 数据分析]
 ---
 

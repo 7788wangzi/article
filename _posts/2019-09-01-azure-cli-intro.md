@@ -5,6 +5,9 @@ categories: [Azure]
 tags: [Azure, CLI]
 ---
 
+## {{ page. title }}
+{{ page.date | date_to_string }}
+
 ## Azure CLI是什么
 
 Azure CLI是一个跨平台的命令行工具，用于管理和维护Microsoft Azure上的服务和资源。
