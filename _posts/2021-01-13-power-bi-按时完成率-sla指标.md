@@ -1,7 +1,7 @@
 ---
-title: 使用Power BI实现交付及时性SLA指标-按时完成率的计算方法
-description: 使用Power BI实现交付及时性SLA指标-按时完成率的计算方法
-categories: [报表]
+title: Power BI - 实现交付及时性SLA指标-按时完成率的计算方法
+description: Power BI - 实现交付及时性SLA指标-按时完成率的计算方法
+categories: [Power Platform]
 layout: main
 ---
 
@@ -10,9 +10,9 @@ layout: main
 
 ## 交付及时性SLA指标-按时完成率的计算方法
 
-一般，交付及时性SLA指标根据两个日期字段计算得出，**目标完成时间**和**实际完成时间**的差额。一个任务是在目标完成时间之前完成的，即为按时完成。实际完成时间在目标完成时间之前完成的任务的比例越多，交付及时性SLA指标就越高。
+一般，交付及时性SLA指标根据两个日期字段计算得出，**目标完成时间**和**实际完成时间**的时间差。一个任务是在目标完成时间之前完成的，即为按时完成。实际完成时间在目标完成时间之前完成的任务的比例越多，交付及时性SLA指标就越高。
 
-根据这个计算方法，在Power BI中我们可以自动计算交付及时性SLA指标。我们的样例数据([Test-data.xlsx]({{ site.baseurl }}/assets/media/Test-data.xlsx))如下，其中使用到的两个时间字段：目标完成时间和实际完成时间。
+根据这个计算方法，在Power BI中我们可以自动计算交付及时性SLA指标。我们的样例数据([Test-data.xlsx]({{ site.baseurl }}/assets/media/Test-data.xlsx))如下，其中使用到的两个时间字段：**目标完成时间**和**实际完成时间**。
 
 ![样例数据]({{ site.baseurl }}/assets/media/2021-01-13-1-data-source.PNG)
 
@@ -22,6 +22,7 @@ layout: main
 1. 选择Test-data.xlsx文件，点击**打开**按钮。
 1. 在导航器中， 选中*Data*表单，点击**加载**按钮完成数据导入。  
     ![加载数据]({{ site.baseurl }}/assets/media/2021-01-13-2-load-data.PNG)
+
 ### 编辑数据，添加新建列和新建度量值。
 1. 在数据加载完成以后，在Power BI中，切换到**数据**选项卡。  
     ![数据]({{ site.baseurl }}/assets/media/2021-01-13-3-data-pbi.PNG)
