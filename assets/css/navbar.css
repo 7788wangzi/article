@@ -47,13 +47,13 @@ nav::after{
 	width:0%;
 	display: block;
 	height:3px;
-	background-color: #444;	
+	background-color: #FFFF40;	
 	transition: all ease-in-out 250ms;
 	position: relative;
 }
 
 .nav-links li a:hover{
-	color: rgb(49, 94, 240);
+	color:#FFFF40;
 
 }
 
