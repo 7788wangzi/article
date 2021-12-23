@@ -14,18 +14,34 @@ layout: main
 `setTimeout()`在指定的时间后执行一段特定的代码。  
 示例：  
 ```javascript
+function sayHi(who){
+    alert('Hello, '+who+' welcome join!');
+}
 
+let greeting = setTimeout(sayHi, 5000, 'Qijie');
 ```
 
 使用`clearTimeout()`来取消上面的超时。
+```javascript
+clearTimeout(greeting);
+```
 
 **`setInterval()`**  
 `setInterval()`每隔一段时间执行一段特定的代码。 
 示例：  
 ```javascript
+function displayTime(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    document.getElementById('divDate').textContent = time;
+}
 
+let setTime = setInterval(displayTime, 2000);
 ``` 
 使用`clearInterval()`来清除intervals。
+```javascript
+clearInterval(setTime);
+```
 
 可以使用递归`setTimeout()`实现每隔100毫米执行一次函数：
 ```javascript
@@ -46,6 +62,44 @@ setTimeout(function run(){
 示例   
 ```javascript
 
+//requestAnimationFrame
+
+const spinner = document.querySelector('#spinner');
+let rotateCount = 0;
+let rAF;
+let startTime = null;
+let isRunning = true;
+
+function draw(timestamp){
+    if(!startTime)
+    {
+        startTime = timestamp;
+    }
+
+    rotateCount = (timestamp - startTime)/3;
+    if(rotateCount > 359)
+    {
+        rotateCount=rotateCount%360;
+    }
+
+    spinner.style.transform = `rotate(${rotateCount}deg)`;
+    rAF = requestAnimationFrame(draw);
+    isRunning = true;
+}
+
+draw();
+
+
+document.querySelector('body').addEventListener('click', function(){
+    if(isRunning)
+    {
+        cancelAnimationFrame(rAF);
+        isRunning = false;
+    }
+    else{
+        draw();
+    }
+})
 ```
 
 ### 使用Async callbacks（回调函数）实现异步请求
