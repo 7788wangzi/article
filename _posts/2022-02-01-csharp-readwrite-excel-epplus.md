@@ -10,7 +10,7 @@ layout: main
 {{ page.date | date_to_string }}
 
 创建一个.net C# Console应用程序， 添加NuGet包`EPPlus`.  
-![NuGet安装包EPPlus](eppplus.PNG)
+![NuGet安装包EPPlus]({{ site.baseurl }}/assets/media/eppplus.PNG)
 
 配置EPPlus的Liscense Context。
 如果是商用应用，声明以下代码：
@@ -84,7 +84,7 @@ ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 ```
 
 写入Excel的内容展示:  
-![Excel内容](excel-data.PNG)
+![Excel内容]({{ site.baseurl }}/assets/media/excel-data.PNG)
 
 示例代码中读取Excel内容的代码:
 ```csharp
